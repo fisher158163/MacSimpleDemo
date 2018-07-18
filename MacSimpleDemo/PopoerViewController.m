@@ -14,7 +14,6 @@
 @property (weak) IBOutlet NSImageView *pictureImageView;
 @property (weak) IBOutlet NSTextField *label;
 @property (nonatomic,strong) NSFont *font;
-
 @end
 
 @implementation PopoerViewController
@@ -24,6 +23,7 @@
     self.view.layer.backgroundColor = [NSColor orangeColor].CGColor;
     [self setupImageView];
 }
+
 - (void)setupImageView {
     self.imageView.imageFrameStyle = NSImageFramePhoto; // 图片边框的样式
     self.imageView.wantsLayer = YES;

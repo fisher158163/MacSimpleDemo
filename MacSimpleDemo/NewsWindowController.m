@@ -11,13 +11,10 @@
 #import "AppDelegate.h"
 
 @interface NewsWindowController ()<NSComboBoxDataSource, NSComboBoxDelegate>
-
 @property (weak) IBOutlet NSView *bgView;
 @property (weak) IBOutlet NSImageView *wallpaperImageView;
-
 @property (strong) NSArray *datas;
 @property (strong) ThirdWindowController *thirdWindowVC;
-
 @end
 
 @implementation NewsWindowController

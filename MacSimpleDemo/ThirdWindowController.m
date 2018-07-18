@@ -10,7 +10,6 @@
 #import "CollectionViewItem.h"
 
 @interface ThirdWindowController ()
-
 @end
 
 @implementation ThirdWindowController

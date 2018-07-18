@@ -10,14 +10,11 @@
 #import "NewsWindowController.h"
 
 @interface MainWindowController ()
-
 @property (strong) NewsWindowController *newsWindow;
-
 @property (weak) IBOutlet NSView *bgView;
 @property (weak) IBOutlet NSButton *button;
 @property (weak) IBOutlet NSImageView *imageView1;
 @property (weak) IBOutlet NSImageView *imageView2;
-
 @end
 
 @implementation MainWindowController
@@ -51,7 +48,6 @@
 - (void)resizeSubviewsWithOldSize:(NSSize)oldBoundsSize {
 
 }
-
 
 - (void)setupImageView {
     self.imageView1.imageFrameStyle = NSImageFramePhoto; //图片边框的样式

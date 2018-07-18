@@ -10,13 +10,11 @@
 #import "PopoerViewController.h"
 
 @interface AppDelegate ()
-
 @property (weak) IBOutlet NSWindow *window;
 @property (strong) NSMenu *dockMenu;
 @property (strong) NSStatusItem *statusItem;
 @property(nonatomic,strong) NSPopover *popover;
 @property(nonatomic,strong) PopoerViewController *popoerVC;
-
 @end
 
 @implementation AppDelegate
@@ -93,7 +91,6 @@
         [dock setShowsApplicationBadge:YES];
     }
 }
-
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
 

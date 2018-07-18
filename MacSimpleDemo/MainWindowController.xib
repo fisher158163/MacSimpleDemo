@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14113" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14113"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="MainWindowController">
+            <connections>
+                <outlet property="bgView" destination="se5-gp-TjO" id="ops-hO-W10"/>
+                <outlet property="button" destination="wda-Ip-Sok" id="zUk-U5-Acu"/>
+                <outlet property="imageView1" destination="vdU-YT-wFS" id="twR-fw-iC4"/>
+                <outlet property="imageView2" destination="6TD-No-Lqb" id="QPc-IU-xym"/>
+                <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" animationBehavior="default" id="F0z-JX-Cv5">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="480" height="270"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2048" height="1129"/>
+            <view key="contentView" wantsLayer="YES" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="wda-Ip-Sok">
+                        <rect key="frame" x="184" y="112" width="112" height="43"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="HbM-5T-PI4"/>
+                            <constraint firstAttribute="width" constant="100" id="KNG-Qn-8eE"/>
+                        </constraints>
+                        <buttonCell key="cell" type="push" title="显示" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="kmr-7W-n5i">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" size="13" name=".PingFangSC-Regular"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="showNewsWindow:" target="-2" id="qir-bY-yEC"/>
+                        </connections>
+                    </button>
+                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6TD-No-Lqb">
+                        <rect key="frame" x="340" y="75" width="120" height="120"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="120" id="YUd-nj-rBQ"/>
+                            <constraint firstAttribute="height" constant="120" id="fDg-hb-sKz"/>
+                        </constraints>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="krI-0B-BRH"/>
+                    </imageView>
+                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vdU-YT-wFS">
+                        <rect key="frame" x="20" y="75" width="120" height="120"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="120" id="8Jb-hv-Jzz"/>
+                            <constraint firstAttribute="height" constant="120" id="Jae-wV-6yr"/>
+                        </constraints>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="T5t-Og-krI"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="6TD-No-Lqb" firstAttribute="centerY" secondItem="se5-gp-TjO" secondAttribute="centerY" id="2x6-dW-sPR"/>
+                    <constraint firstItem="wda-Ip-Sok" firstAttribute="centerX" secondItem="se5-gp-TjO" secondAttribute="centerX" id="5EO-qP-3Nz"/>
+                    <constraint firstAttribute="trailing" secondItem="6TD-No-Lqb" secondAttribute="trailing" constant="20" id="Q1J-8M-D26"/>
+                    <constraint firstItem="vdU-YT-wFS" firstAttribute="centerY" secondItem="se5-gp-TjO" secondAttribute="centerY" id="mXW-Ef-Mf5"/>
+                    <constraint firstItem="vdU-YT-wFS" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="20" id="oxZ-Zh-gc3"/>
+                    <constraint firstItem="wda-Ip-Sok" firstAttribute="centerY" secondItem="se5-gp-TjO" secondAttribute="centerY" id="y2N-no-1RW"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
+            </connections>
+            <point key="canvasLocation" x="165" y="156"/>
+        </window>
+    </objects>
+</document>

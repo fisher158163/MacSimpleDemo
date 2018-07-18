@@ -7,21 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		607CA8DF20FF0A2100D0014D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 607CA8DE20FF0A2100D0014D /* AppDelegate.m */; };
 		607CA8E120FF0A2200D0014D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607CA8E020FF0A2200D0014D /* Assets.xcassets */; };
 		607CA8E420FF0A2200D0014D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607CA8E220FF0A2200D0014D /* MainMenu.xib */; };
 		607CA8E720FF0A2200D0014D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 607CA8E620FF0A2200D0014D /* main.m */; };
+		607CA8F020FF0A6400D0014D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 607CA8EF20FF0A6400D0014D /* AppDelegate.m */; };
+		607CA90020FF0A9100D0014D /* NewsWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607CA8F120FF0A8F00D0014D /* NewsWindowController.xib */; };
+		607CA90120FF0A9100D0014D /* ThirdWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 607CA8F420FF0A8F00D0014D /* ThirdWindowController.m */; };
+		607CA90220FF0A9100D0014D /* CollectionViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 607CA8F520FF0A8F00D0014D /* CollectionViewItem.m */; };
+		607CA90320FF0A9100D0014D /* PopoerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607CA8F720FF0A9000D0014D /* PopoerViewController.xib */; };
+		607CA90420FF0A9100D0014D /* NewsWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 607CA8F820FF0A9000D0014D /* NewsWindowController.m */; };
+		607CA90520FF0A9100D0014D /* PopoerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 607CA8F920FF0A9000D0014D /* PopoerViewController.m */; };
+		607CA90620FF0A9100D0014D /* ThirdWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607CA8FA20FF0A9000D0014D /* ThirdWindowController.xib */; };
+		607CA90720FF0A9100D0014D /* CollectionViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607CA8FC20FF0A9000D0014D /* CollectionViewItem.xib */; };
+		607CA90820FF0A9100D0014D /* MainWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607CA8FE20FF0A9100D0014D /* MainWindowController.xib */; };
+		607CA90920FF0A9100D0014D /* MainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 607CA8FF20FF0A9100D0014D /* MainWindowController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		607CA8DA20FF0A2100D0014D /* MacSimpleDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacSimpleDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		607CA8DD20FF0A2100D0014D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		607CA8DE20FF0A2100D0014D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		607CA8E020FF0A2200D0014D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		607CA8E320FF0A2200D0014D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		607CA8E520FF0A2200D0014D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607CA8E620FF0A2200D0014D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		607CA8E820FF0A2200D0014D /* MacSimpleDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacSimpleDemo.entitlements; sourceTree = "<group>"; };
+		607CA8EE20FF0A6400D0014D /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		607CA8EF20FF0A6400D0014D /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		607CA8F120FF0A8F00D0014D /* NewsWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsWindowController.xib; sourceTree = "<group>"; };
+		607CA8F220FF0A8F00D0014D /* MainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainWindowController.h; sourceTree = "<group>"; };
+		607CA8F320FF0A8F00D0014D /* PopoerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoerViewController.h; sourceTree = "<group>"; };
+		607CA8F420FF0A8F00D0014D /* ThirdWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdWindowController.m; sourceTree = "<group>"; };
+		607CA8F520FF0A8F00D0014D /* CollectionViewItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewItem.m; sourceTree = "<group>"; };
+		607CA8F620FF0A9000D0014D /* ThirdWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdWindowController.h; sourceTree = "<group>"; };
+		607CA8F720FF0A9000D0014D /* PopoerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopoerViewController.xib; sourceTree = "<group>"; };
+		607CA8F820FF0A9000D0014D /* NewsWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsWindowController.m; sourceTree = "<group>"; };
+		607CA8F920FF0A9000D0014D /* PopoerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopoerViewController.m; sourceTree = "<group>"; };
+		607CA8FA20FF0A9000D0014D /* ThirdWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdWindowController.xib; sourceTree = "<group>"; };
+		607CA8FB20FF0A9000D0014D /* NewsWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsWindowController.h; sourceTree = "<group>"; };
+		607CA8FC20FF0A9000D0014D /* CollectionViewItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewItem.xib; sourceTree = "<group>"; };
+		607CA8FD20FF0A9000D0014D /* CollectionViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewItem.h; sourceTree = "<group>"; };
+		607CA8FE20FF0A9100D0014D /* MainWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindowController.xib; sourceTree = "<group>"; };
+		607CA8FF20FF0A9100D0014D /* MainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWindowController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +79,23 @@
 		607CA8DC20FF0A2100D0014D /* MacSimpleDemo */ = {
 			isa = PBXGroup;
 			children = (
-				607CA8DD20FF0A2100D0014D /* AppDelegate.h */,
-				607CA8DE20FF0A2100D0014D /* AppDelegate.m */,
+				607CA8EE20FF0A6400D0014D /* AppDelegate.h */,
+				607CA8EF20FF0A6400D0014D /* AppDelegate.m */,
+				607CA8F220FF0A8F00D0014D /* MainWindowController.h */,
+				607CA8FF20FF0A9100D0014D /* MainWindowController.m */,
+				607CA8FE20FF0A9100D0014D /* MainWindowController.xib */,
+				607CA8FB20FF0A9000D0014D /* NewsWindowController.h */,
+				607CA8F820FF0A9000D0014D /* NewsWindowController.m */,
+				607CA8F120FF0A8F00D0014D /* NewsWindowController.xib */,
+				607CA8F620FF0A9000D0014D /* ThirdWindowController.h */,
+				607CA8F420FF0A8F00D0014D /* ThirdWindowController.m */,
+				607CA8FA20FF0A9000D0014D /* ThirdWindowController.xib */,
+				607CA8FD20FF0A9000D0014D /* CollectionViewItem.h */,
+				607CA8F520FF0A8F00D0014D /* CollectionViewItem.m */,
+				607CA8FC20FF0A9000D0014D /* CollectionViewItem.xib */,
+				607CA8F320FF0A8F00D0014D /* PopoerViewController.h */,
+				607CA8F920FF0A9000D0014D /* PopoerViewController.m */,
+				607CA8F720FF0A9000D0014D /* PopoerViewController.xib */,
 				607CA8E020FF0A2200D0014D /* Assets.xcassets */,
 				607CA8E220FF0A2200D0014D /* MainMenu.xib */,
 				607CA8E520FF0A2200D0014D /* Info.plist */,
@@ -122,8 +162,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				607CA90820FF0A9100D0014D /* MainWindowController.xib in Resources */,
 				607CA8E120FF0A2200D0014D /* Assets.xcassets in Resources */,
+				607CA90620FF0A9100D0014D /* ThirdWindowController.xib in Resources */,
+				607CA90320FF0A9100D0014D /* PopoerViewController.xib in Resources */,
+				607CA90020FF0A9100D0014D /* NewsWindowController.xib in Resources */,
 				607CA8E420FF0A2200D0014D /* MainMenu.xib in Resources */,
+				607CA90720FF0A9100D0014D /* CollectionViewItem.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,8 +179,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				607CA90420FF0A9100D0014D /* NewsWindowController.m in Sources */,
+				607CA90520FF0A9100D0014D /* PopoerViewController.m in Sources */,
+				607CA90120FF0A9100D0014D /* ThirdWindowController.m in Sources */,
+				607CA90920FF0A9100D0014D /* MainWindowController.m in Sources */,
+				607CA90220FF0A9100D0014D /* CollectionViewItem.m in Sources */,
+				607CA8F020FF0A6400D0014D /* AppDelegate.m in Sources */,
 				607CA8E720FF0A2200D0014D /* main.m in Sources */,
-				607CA8DF20FF0A2100D0014D /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,7 +325,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.liyu.quotes.MacSimpleDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liyus.quotes.MacSimpleDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -293,7 +343,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.liyu.quotes.MacSimpleDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liyus.quotes.MacSimpleDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

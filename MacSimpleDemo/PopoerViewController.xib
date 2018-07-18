@@ -7,8 +7,13 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="PopoerViewController">
             <connections>
+                <outlet property="dateLabel" destination="LDm-f7-Mcc" id="aOk-mi-EZZ"/>
+                <outlet property="datePicker1" destination="gZk-N3-ugy" id="lY7-Kb-8iZ"/>
+                <outlet property="datePicker2" destination="so4-Mu-keF" id="AXV-8P-TBe"/>
                 <outlet property="imageView" destination="edM-wi-sVt" id="kQ3-yB-4GR"/>
                 <outlet property="label" destination="Nwd-Nv-xYB" id="ubz-JP-DvV"/>
+                <outlet property="pasteLabel" destination="shj-ex-1Ma" id="2ce-oq-5xK"/>
+                <outlet property="pickerBgView" destination="yoG-1p-ml4" id="Ml3-0H-bCd"/>
                 <outlet property="pictureImageView" destination="5Xg-9p-M8T" id="VFX-3O-lYR"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
             </connections>
@@ -16,21 +21,21 @@
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customView id="Hz6-mo-xeY">
-            <rect key="frame" x="0.0" y="0.0" width="700" height="497"/>
+            <rect key="frame" x="0.0" y="0.0" width="694" height="782"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
                 <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="edM-wi-sVt">
-                    <rect key="frame" x="488" y="327" width="150" height="150"/>
+                    <rect key="frame" x="488" y="612" width="150" height="150"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="T5F-gA-FbX"/>
                 </imageView>
                 <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Xg-9p-M8T">
-                    <rect key="frame" x="20" y="327" width="150" height="150"/>
+                    <rect key="frame" x="20" y="612" width="150" height="150"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="lhQ-Fz-2MH"/>
                 </imageView>
                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YjC-RG-aVw">
-                    <rect key="frame" x="299" y="384" width="102" height="32"/>
+                    <rect key="frame" x="299" y="669" width="102" height="32"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <buttonCell key="cell" type="push" title="拍照" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ouz-kl-lXQ">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -41,7 +46,7 @@
                     </connections>
                 </button>
                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uRM-3A-kdm">
-                    <rect key="frame" x="299" y="326" width="102" height="32"/>
+                    <rect key="frame" x="299" y="611" width="102" height="32"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <buttonCell key="cell" type="push" title="选择字体" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="UVx-ng-qOi">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -52,7 +57,7 @@
                     </connections>
                 </button>
                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kG3-5X-hTg">
-                    <rect key="frame" x="299" y="273" width="102" height="32"/>
+                    <rect key="frame" x="299" y="558" width="102" height="32"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <buttonCell key="cell" type="push" title="选择颜色" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="yfh-tB-sgk">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -63,7 +68,7 @@
                     </connections>
                 </button>
                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5uX-EF-wF9">
-                    <rect key="frame" x="299" y="219" width="102" height="32"/>
+                    <rect key="frame" x="299" y="504" width="102" height="32"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <buttonCell key="cell" type="push" title="发送通知" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="lCw-Dt-Lnh">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -74,7 +79,7 @@
                     </connections>
                 </button>
                 <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nwd-Nv-xYB">
-                    <rect key="frame" x="35" y="74" width="121" height="190"/>
+                    <rect key="frame" x="35" y="359" width="121" height="190"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" title="12345ewjdxnxnx   " drawsBackground="YES" id="mKN-hA-sxm">
                         <font key="font" metaFont="system"/>
@@ -82,8 +87,101 @@
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mEf-vp-y71">
+                    <rect key="frame" x="290" y="448" width="120" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="push" title="添加提醒事项" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="GOK-hE-ltU">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" size="13" name=".PingFangSC-Regular"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="addReminder:" target="-2" id="DOf-Pl-XGO"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JYr-EU-a2O">
+                    <rect key="frame" x="303" y="392" width="94" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="push" title="添加日历" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="lNn-sB-rSL">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" size="13" name=".PingFangSC-Regular"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="addCalendar:" target="-2" id="EgI-4Q-Dgh"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9hw-nD-6tJ">
+                    <rect key="frame" x="303" y="338" width="94" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="push" title="复制内容" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="oC9-bL-Pf4">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" size="13" name=".PingFangSC-Regular"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="copy:" target="-2" id="dBU-vf-uPl"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tRh-bb-51k">
+                    <rect key="frame" x="304" y="294" width="94" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="push" title="粘贴内容" bezelStyle="rounded" alignment="center" state="on" borderStyle="border" inset="2" id="Cvz-Jk-5uF">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" size="13" name=".PingFangSC-Regular"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="paste:" target="-2" id="xnY-G5-fH4"/>
+                    </connections>
+                </button>
+                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="shj-ex-1Ma">
+                    <rect key="frame" x="35" y="301" width="200" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" title="11111111" drawsBackground="YES" id="Dyl-wi-7rQ">
+                        <font key="font" metaFont="system" size="21"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yoG-1p-ml4">
+                    <rect key="frame" x="27" y="6" width="516" height="226"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <subviews>
+                        <datePicker verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gZk-N3-ugy">
+                            <rect key="frame" x="34" y="20" width="139" height="148"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <datePickerCell key="cell" borderStyle="bezel" alignment="left" datePickerStyle="clockAndCalendar" id="vAg-Wg-y4g">
+                                <font key="font" metaFont="system"/>
+                                <date key="date" timeIntervalSinceReferenceDate="-595929600">
+                                    <!--1982-02-12 16:00:00 +0000-->
+                                </date>
+                                <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            </datePickerCell>
+                        </datePicker>
+                        <datePicker verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="so4-Mu-keF">
+                            <rect key="frame" x="315" y="25" width="122" height="123"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <datePickerCell key="cell" borderStyle="bezel" alignment="left" datePickerMode="range" datePickerStyle="clockAndCalendar" id="2hY-1U-Ayd">
+                                <font key="font" metaFont="system"/>
+                                <date key="date" timeIntervalSinceReferenceDate="-595929600">
+                                    <!--1982-02-12 16:00:00 +0000-->
+                                </date>
+                                <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                <datePickerElements key="datePickerElements" hour="YES" minute="YES" second="YES"/>
+                            </datePickerCell>
+                        </datePicker>
+                    </subviews>
+                </customView>
+                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LDm-f7-Mcc">
+                    <rect key="frame" x="27" y="240" width="279" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" placeholderString="日期：" drawsBackground="YES" id="8H2-7o-vgc">
+                        <font key="font" metaFont="system" size="21"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
             </subviews>
-            <point key="canvasLocation" x="-152" y="269.5"/>
+            <point key="canvasLocation" x="-155" y="412"/>
         </customView>
     </objects>
 </document>

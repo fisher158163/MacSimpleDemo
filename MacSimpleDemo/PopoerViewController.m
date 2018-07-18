@@ -21,7 +21,7 @@
 @property (weak) IBOutlet NSDatePicker *datePicker1;
 @property (weak) IBOutlet NSDatePicker *datePicker2;
 @property (weak) IBOutlet NSTextField *dateLabel;
-@property (nonatomic,strong) NSFont *font;
+@property (nonatomic, strong) NSFont *font;
 @end
 
 @implementation PopoerViewController

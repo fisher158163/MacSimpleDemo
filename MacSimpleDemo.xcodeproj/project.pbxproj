@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		605EC025210028740070A74B /* CustomStatusBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 605EC024210028740070A74B /* CustomStatusBarView.m */; };
+		605EC027210028950070A74B /* CustomStatusBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 605EC026210028950070A74B /* CustomStatusBarView.xib */; };
 		607CA8E120FF0A2200D0014D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607CA8E020FF0A2200D0014D /* Assets.xcassets */; };
 		607CA8E420FF0A2200D0014D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607CA8E220FF0A2200D0014D /* MainMenu.xib */; };
 		607CA8E720FF0A2200D0014D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 607CA8E620FF0A2200D0014D /* main.m */; };
@@ -24,6 +26,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		605EC023210028740070A74B /* CustomStatusBarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomStatusBarView.h; sourceTree = "<group>"; };
+		605EC024210028740070A74B /* CustomStatusBarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomStatusBarView.m; sourceTree = "<group>"; };
+		605EC026210028950070A74B /* CustomStatusBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomStatusBarView.xib; sourceTree = "<group>"; };
 		607CA8DA20FF0A2100D0014D /* MacSimpleDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacSimpleDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607CA8E020FF0A2200D0014D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		607CA8E320FF0A2200D0014D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
@@ -96,6 +101,9 @@
 				607CA8F320FF0A8F00D0014D /* PopoerViewController.h */,
 				607CA8F920FF0A9000D0014D /* PopoerViewController.m */,
 				607CA8F720FF0A9000D0014D /* PopoerViewController.xib */,
+				605EC023210028740070A74B /* CustomStatusBarView.h */,
+				605EC024210028740070A74B /* CustomStatusBarView.m */,
+				605EC026210028950070A74B /* CustomStatusBarView.xib */,
 				607CA8E020FF0A2200D0014D /* Assets.xcassets */,
 				607CA8E220FF0A2200D0014D /* MainMenu.xib */,
 				607CA8E520FF0A2200D0014D /* Info.plist */,
@@ -174,6 +182,7 @@
 				607CA90020FF0A9100D0014D /* NewsWindowController.xib in Resources */,
 				607CA8E420FF0A2200D0014D /* MainMenu.xib in Resources */,
 				607CA90720FF0A9100D0014D /* CollectionViewItem.xib in Resources */,
+				605EC027210028950070A74B /* CustomStatusBarView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,6 +200,7 @@
 				607CA90220FF0A9100D0014D /* CollectionViewItem.m in Sources */,
 				607CA8F020FF0A6400D0014D /* AppDelegate.m in Sources */,
 				607CA8E720FF0A2200D0014D /* main.m in Sources */,
+				605EC025210028740070A74B /* CustomStatusBarView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "PopoerViewController.h"
+#import "CustomStatusBarView.h"
+#import <Cocoa/Cocoa.h>
 
 @interface AppDelegate ()
 @property (weak) IBOutlet NSWindow *window;
@@ -24,7 +26,8 @@
     [_mainWindow.window center];
     [_mainWindow.window makeKeyAndOrderFront:nil];
     [self addDockMenu];
-    [self addStatusItem];
+    [self addDefaultStatusBar];
+    //[self addCustomStatusBar];
     [NSApp setApplicationIconImage:[NSImage imageNamed:@"dog"]];
     [self setAppDockTile];
 }
@@ -42,8 +45,8 @@
     return self.dockMenu;
 }
 
-// 添加状态栏菜单
-- (void)addStatusItem {
+// 添加默认状态栏菜单
+- (void)addDefaultStatusBar {
     // 获取系统单例NSStatusBar对象
     NSStatusBar *statusBar = [NSStatusBar systemStatusBar];
     NSStatusItem *statusItem = [statusBar statusItemWithLength: NSSquareStatusItemLength];
@@ -55,6 +58,20 @@
     [statusItem.button setAction:@selector(statusButtonOnClick:)];
     // statusItem 和 statusItem.button 都绑定 action，那调用哪一个呢？
     // 最先绑定的那个，被后面那个覆盖。
+}
+
+// 添加自定义状态栏菜单
+- (void)addCustomStatusBar {
+    //获取系统单例NSStatusBar对象
+    NSStatusBar *statusBar = [NSStatusBar systemStatusBar];
+    //设置动态宽度的NSStatusItem对象
+    NSStatusItem *item = [statusBar statusItemWithLength:NSVariableStatusItemLength];
+    //设置自定义的view
+    NSView *customerView = [CustomStatusBarView loadWithNibNamed:@"CustomStatusBarView" owner:self loadClass:NSStringFromClass([CustomStatusBarView class])];
+    [item setView: customerView];
+    //保存到属性变量
+    self.statusItem = item;
+    NSLog(@"%@",NSStringFromRect(item.view.bounds));
 }
 
 - (void)statusOnClick:(NSStatusItem *)item{

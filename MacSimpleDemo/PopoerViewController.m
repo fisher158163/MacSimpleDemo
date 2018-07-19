@@ -375,5 +375,7 @@
     [[NSUserNotificationCenter defaultUserNotificationCenter] removeAllDeliveredNotifications];
 }
 
+//如何隐藏dock图标和菜单，只显示状态栏图标：
+//在info.plist中添加Application is agent (UIElement)属性，并且设置为YES。
 
 @end
